@@ -1,0 +1,347 @@
+/* Temporary */
+
+/* Global */
+
+/* Font files & CSS generated with https://transfonter.org/ */
+@font-face {
+    font-family: "Ubuntu Mono";
+    src: url("../assets/UbuntuMono-Bold.woff2") format("woff2"), url("../assets/UbuntuMono-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Ubuntu Mono";
+    src: url("../assets/UbuntuMono-Italic.woff2") format("woff2"), url("../assets/UbuntuMono-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Ubuntu Mono";
+    src: url("../assets/UbuntuMono-BoldItalic.woff2") format("woff2"), url("../assets/UbuntuMono-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Ubuntu Mono";
+    src: url("../assets/UbuntuMono-Regular.woff2") format("woff2"), url("../assets/UbuntuMono-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.centered {
+    text-align: center;
+}
+
+.positive {
+    color: var(--beans-dark-green);
+}
+
+.negative {
+    color: var(--beans-dark-red);
+}
+
+.interactive:hover {
+    cursor: crosshair;
+    color: var(--beans-light-purple);
+}
+
+.b {
+    font-weight: bold;
+}
+
+.i {
+    font-style: italic;
+    color: #808080;
+}
+
+.u {
+    text-decoration: underline;
+}
+
+.grow {
+    transition: all .2s; 
+}
+
+.grow:hover { 
+    transform: scale(1.15);
+}
+
+.pixel {
+    image-rendering: pixelated;
+}
+
+* {
+    border-width: 2px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    appearance: none;
+}
+
+:root {
+    --beans-light-white: #EFEFEF;
+    --beans-dark-white: #DFDFDF;
+    --beans-light-red: #DC1B07;
+    --beans-dark-red: #9A0003;
+    --beans-light-orange: #955311;
+    --beans-dark-orange: #823D01;
+    --beans-light-yellow: #DCC606;
+    --beans-dark-yellow: #C0A500;
+    --beans-light-green: #4CFD4C;
+    --beans-dark-green: #2CC822;
+    --beans-light-blue: #1DCBFB;
+    --beans-dark-blue: #00A0D9;
+    --beans-light-purple: #5865F2;
+    --beans-dark-purple: #454FBF;
+    --beans-light-pink: #C726FB;
+    --beans-dark-pink: #7B1AB6;
+    --beans-light-black: #202020;
+    --beans-dark-black: #101010;
+}
+
+body {
+    background-color: var(--beans-light-white);
+    color: var(--beans-light-black);
+    font-family: "Ubuntu Mono", monospace;
+    height: 100vh;
+}
+
+::selection {
+    background-color: var(--beans-light-orange);
+}
+
+header, main {
+    padding-inline: 1em;
+}
+
+main {
+    display: flow-root;
+}
+
+footer {
+    padding: 1em;
+    background-color: var(--beans-dark-white);
+    color: var(--beans-dark-black);
+    display: flow-root;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+button {
+    background-color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    border-color: var(--beans-dark-white);
+    padding: calc(.5em - 4px); /* -4px (border) */
+}
+
+a, button {
+    color: var(--beans-light-blue);
+    text-decoration: none;
+    cursor: crosshair;
+}
+
+a:hover, button:hover {
+    color: inherit;
+}
+
+a:active, button:active {
+    color: var(--beans-dark-blue);
+}
+
+
+/* Navbar */
+
+nav {
+    padding: 1em;
+    background-color: var(--beans-dark-white);
+    color: var(--beans-dark-black);
+}
+
+nav button {
+    border-color: var(--beans-light-white);
+    padding-block: calc(1em - 4px); /* -4px (border) */
+    font-size: 1.25em;
+    width: 175px;
+}
+
+#logo {
+    display: inline-block;
+    position: absolute;
+    width: 64px
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Matches the natural gap if the navbar wasn't a flexbox */
+    height: 64px; /* Matches the logo height */
+}
+
+#dropdown-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#with-dropdown {
+    width: 150px;
+}
+
+#dropdown {
+    width: 25px;
+}
+
+#dropdown-shit {
+    position: absolute;
+    width: 175px;
+    top: 76px;
+    display: none;
+}
+
+#dropdown-shit button {
+    background-color: var(--beans-dark-white);
+    padding-block: calc(.75em - 4px); /* -4px (border) */
+    font-size: 1em;
+}
+
+/* Footer */
+
+#left-footer {
+    float: left;
+    text-align: left;
+}
+
+#last-modified-date {
+    text-decoration: underline dotted 2px;
+}
+
+#center-footer {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+#right-footer {
+    float: right;
+    text-align: right;
+}
+
+/* 404 */
+
+#text-404 {
+    display: inline-block;
+    user-select: none;
+}
+
+.rotate {
+    animation: rotate 1.5s ease-out;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1080deg);
+    }
+}
+
+/* Home */
+
+#record {
+    animation: spin 1.8s infinite linear; /* 1.8s * 100/3 = 60s = 1m */
+    transition: all ;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(1turn);
+        /*
+            1 * 100/3 = 33 & 1/3.
+            33 & 1/3 rpm is the standard speed for LPs
+        */
+    }
+}
+
+/* About */
+
+/* Artists */
+
+#artists {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+#artists button {
+    border-color: var(--beans-light-white);
+}
+
+#artists figure {
+    width: calc(256px + 4px); /* +4 (border) */
+    border: 2px solid;
+    box-shadow: 16px 16px 12px;
+    background-color: var(--beans-dark-white);
+    color: var(--beans-dark-black);
+    display: flex;
+    flex-direction: column;
+}
+
+#artists a:hover figcaption {
+    color: var(--beans-light-blue);
+}
+
+#artists a:active figcaption {
+    color: var(--beans-dark-blue);
+}
+
+#artists figcaption {
+    padding: 12px;
+    background-color: var(--beans-light-black);
+    color: var(--beans-light-white);
+}
+
+.artist-image {
+    width: 256px;
+    height: 256px;
+    object-fit: contain;
+    /* clip-path: rect(auto auto auto auto round 15%); */
+}
+
+#artists blockquote {
+    display: inline;
+    padding: 12px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    justify-self: flex-end;
+    flex-wrap: wrap;
+}
+
+.links a {
+    display: contents;
+}
+
+.links img {
+    width: 24px;
+}
+
+/* Musix */
