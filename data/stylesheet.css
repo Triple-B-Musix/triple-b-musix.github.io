@@ -115,11 +115,13 @@ body {
 }
 
 header, main {
-    padding-inline: 1em;
+    /* padding-inline: 1em; */
 }
 
 main {
     display: flow-root;
+    width: 75vw;
+    margin-inline: auto;
 }
 
 footer {
@@ -157,6 +159,9 @@ a:active, button:active {
     color: var(--beans-dark-blue);
 }
 
+iframe {
+    display: block;
+}
 
 /* Navbar */
 
@@ -205,6 +210,7 @@ nav button {
     width: 175px;
     top: 76px;
     display: none;
+    z-index: 1;
 }
 
 #dropdown-shit button {
@@ -273,6 +279,10 @@ nav button {
 /* About */
 
 /* Artists */
+
+#main-artists {
+    width: auto;
+}
 
 #artists {
     display: flex;
@@ -345,3 +355,46 @@ nav button {
 }
 
 /* Musix */
+
+/* BeansBeefBroccoli */
+
+#main-beans {
+    width: 700px;
+    margin-inline: auto;
+    padding: 0;
+}
+
+#beans-logo {
+    float: left;
+    margin-right: 8px;
+    width: 160px;
+}
+
+#beans-stuff {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    gap: 8px;
+}
+
+#beans-stuff>div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+#beans-stuff button {
+    width: 200px;
+}
+
+.beans-social img {
+    height: 1em;
+    display: block;
+}
+
+.beans-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

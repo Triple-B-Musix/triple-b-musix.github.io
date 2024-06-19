@@ -10,28 +10,30 @@
 
     <body>
         <nav>
-            <a href="index.html"><img id="logo" src="assets/logo.png" alt="Triple B Records Logo" title="Triple B Records Logo"></a>
+            <a href="/"><img id="logo" src="assets/logo.png" alt="Triple B Records Logo" title="Triple B Records Logo"></a>
             <div class="navbar">
-                <a href="index.html" tabindex="-1"><button>Home</button></a>
-                <a href="about.html" tabindex="-1"><button>About</button></a>
+                <a href="/" tabindex="-1"><button>Home</button></a>
+                <a href="about" tabindex="-1"><button>About</button></a>
                 <div id="dropdown-container">
-                    <a href="artists.html" tabindex="-1"><button id="with-dropdown">Artists</button></a>
+                    <a href="artists" tabindex="-1"><button id="with-dropdown">Artists</button></a>
                     <button id="dropdown" onclick="dropdown();">V</button> <!-- TODO change dropdown arrow character to something better -->
                     <div id="dropdown-shit">
-                        <a href="beansbeefbroccoli.html" tabindex="-1"><button>BeansBeefBroccoli</button></a>
-                        <a href="red-hot-chili-peppers.html" tabindex="-1"><button>Red Hot Chili Peppers</button></a>
-                        <a href="foo-fighters.html" tabindex="-1"><button>Foo Fighters</button></a>
-                        <a href="halley-labs.html" tabindex="-1"><button>Halley Labs</button></a>
-                        <a href="l-ipsum.html" tabindex="-1"><button>L. Ipsum</button></a>
-                        <a href="when-people-were-shorter-and-lived-near-the-water.html" tabindex="-1"><button>When People Were Shorter and Lived Near the Water</button></a>
-                        <a href="pendulum.html" tabindex="-1"><button>Pendulum</button></a>
+                        <a href="beansbeefbroccoli" tabindex="-1"><button>BeansBeefBroccoli</button></a>
+                        <a href="red-hot-chili-peppers" tabindex="-1"><button>Red Hot Chili Peppers</button></a>
+                        <a href="foo-fighters" tabindex="-1"><button>Foo Fighters</button></a>
+                        <a href="halley-labs" tabindex="-1"><button>Halley Labs</button></a>
+                        <a href="l-ipsum" tabindex="-1"><button>L. Ipsum</button></a>
+                        <a href="when-people-were-shorter-and-lived-near-the-water" tabindex="-1"><button>When People Were Shorter and Lived Near the Water</button></a>
+                        <a href="pendulum" tabindex="-1"><button>Pendulum</button></a>
                     </div>
                 </div>
-                <a href="music.html" tabindex="-1"><button>Musix</button></a>
+                <a href="music" tabindex="-1"><button>Musix</button></a>
             </div>
         </nav>
 
         <br>
+
+        <div class="centered"><img src="assets/under_construction.gif"></div> <!-- TODO Remove this -->
 
         <header>
             <h1>BeansBeefBroccoli</h1>
@@ -39,10 +41,48 @@
 
         <br>
 
-        <main>
-            <div class="centered"><img src="assets/under_construction.gif"></div>
-            <img style="float: left; margin-right: 8px; width: 160px;" class="pixel" src="assets/beansbeefbroccoli.png">
-            <p>BeansBeefBroccoli</p>
+        <main id="main-beans">
+            <img class="pixel" id="beans-logo" src="assets/beansbeefbroccoli/beansbeefbroccoli.png">
+            <p><span class="b">BeansBeefBroccoli</span> <span class="i">(Any Pronouns)</span> is a musix cool guy person yeah from Virginia, USA. They may also be known as:
+                <li>Beans</li>
+                <li>BeansBeef</li>
+                <li>BeansBeefBroc</li>
+                <li>BBB</li>
+                <li>Triple B</li>
+                <li>Bean Man</li>
+            </p>
+            <br>
+            <p>I don't have much more to say right now, have a nice day! :)</p> <!-- TODO add more -->
+            
+            <br>
+
+            <div id="beans-stuff">
+                <div style="border: 2px solid #FFFF00;">
+                    <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1309226524/size=large/bgcol=ffffff/linkcol=955311/tracklist=false/transparent=true/" seamless><a href="https://halleylabs.com/album/unrealistic-project-roadmap">Unrealistic Project Roadmap by K²</a></iframe> <!-- TODO change this iframe -->
+                </div>
+                <div style="border: 2px solid #FF00FF;">
+                    <iframe style="border: 0; width: 350px; height: 470px; margin: auto;" src="https://bandcamp.com/EmbeddedPlayer/album=1309226524/size=large/bgcol=ffffff/linkcol=955311/tracklist=false/transparent=true/" seamless><a href="https://halleylabs.com/album/unrealistic-project-roadmap">Unrealistic Project Roadmap by K²</a></iframe> <!-- TODO change this iframe -->
+                </div>
+                <div style="grid-column: span 2; border: 2px solid #00FFFF;">
+                    <a href="https://en.pronouns.page/@BeansBeefBroc" target="_blank"><button class="beans-social"><img src="assets/beansbeefbroccoli/pronouns.page.svg">&nbsp;Pronouns.page</button></a>
+                    <a href="https://beansbeefbroccoli.github.io/" target="_blank"><button class="beans-social"><img src="assets/beansbeefbroccoli/website.ico">&nbsp;Personal Website</button></a> <!-- TODO Fix this link -->
+                    <a href="mailto:BeansBeefBroccoli@gmail.com"><button class="beans-social"><img src="assets/beansbeefbroccoli/email.png">&nbsp;Email</button></a>
+                    <a href="https://beansbeefbroccoli.bandcamp.com/" target="_blank"><button class="beans-social"><img src="assets/beansbeefbroccoli/bandcamp.png">&nbsp;Bandcamp</button></a>
+                    <a href="https://cohost.org/BeansBeefBroccoli?page=0" target="_blank"><button class="beans-social"><img src="assets/beansbeefbroccoli/cohost.png">&nbsp;cohost</button></a>
+                    <a href="https://www.furaffinity.net/user/beansbeefbroccoli" target="_blank"><button class="beans-social"><img src="assets/beansbeefbroccoli/fur_affinity.ico">&nbsp;Fur Affinity</button></a>
+                    <a href="https://github.com/BeansBeefBroccoli" target="_blank"><button class="beans-social"><img src="assets/beansbeefbroccoli/github.svg">&nbsp;GitHub</button></a>
+                    <a href="https://beansbeefbroccoli.itch.io/" target="_blank"><button class="beans-social"><img src="assets/beansbeefbroccoli/itch.io.ico">&nbsp;itch.io</button></a>
+                    <a href="https://beansbeefbroccoli.newgrounds.com/" target="_blank"><button class="beans-social"><img src="assets/beansbeefbroccoli/newgrounds.png">&nbsp;Newgrounds</button></a>
+                    <a href="https://www.patreon.com/BeansBeefBroccoli" target="_blank"><button class="beans-social"><img src="assets/beansbeefbroccoli/patreon.svg">&nbsp;Patreon</button></a>
+                    <a href="https://www.reddit.com/user/BeansBeefBroccoli/" target="_blank"><button class="beans-social"><img src="assets/beansbeefbroccoli/reddit.png">&nbsp;Reddit</button></a>
+                    <a href="https://soundcloud.com/beansbeefbroccoli" target="_blank"><button class="beans-social"><img src="assets/beansbeefbroccoli/soundcloud.ico">&nbsp;SoundCloud</button></a>
+                    <a href="https://steamcommunity.com/id/BeansBeefBroccoli" target="_blank"><button class="beans-social"><img src="assets/beansbeefbroccoli/steam.ico">&nbsp;Steam</button></a>
+                    <a href="https://www.twitch.tv/beansbeefbroccoli" target="_blank"><button class="beans-social"><img src="assets/beansbeefbroccoli/twitch.png">&nbsp;Twitch</button></a>
+                    <a href="https://www.weasyl.com/~beansbeefbroccoli" target="_blank"><button class="beans-social"><img src="assets/beansbeefbroccoli/weasyl.svg">&nbsp;Weasyl</button></a>
+                    <a href="https://twitter.com/BeansBeefBroc" target="_blank"><button class="beans-social"><img src="assets/beansbeefbroccoli/x.ico">&nbsp;X</button></a>
+                    <a href="https://www.youtube.com/@BeansBeefBroccoli" target="_blank"><button class="beans-social"><img src="assets/beansbeefbroccoli/youtube.png">&nbsp;YouTube</button></a>
+                </div>
+            </div>
         </main>
 
         <br>
