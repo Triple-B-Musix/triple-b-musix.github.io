@@ -388,6 +388,10 @@ nav button {
     width: 200px;
 }
 
+#beans-socials {
+    grid-column: span 2;
+}
+
 .beans-social img {
     height: 1em;
     display: block;
