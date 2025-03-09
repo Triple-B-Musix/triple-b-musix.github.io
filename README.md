@@ -1,3 +1,3 @@
-# Triple B Records Site
+# Triple B Musix Site
 
 Musix
